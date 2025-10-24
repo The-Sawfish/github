@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Website Development Guide - Master Web Development with GitHub</title>
+    <meta name="description" content="Complete guide to building websites with GitHub Pages, Codespaces, and modern web development. From setup to deployment, learn everything you need.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">GitHub Web Dev</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="github-pages.html" class="nav-link">GitHub Pages</a>
+                <a href="github-codespaces.html" class="nav-link">Codespaces</a>
+                <a href="web-development.html" class="nav-link">Web Development</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Master Web Development with GitHub</h1>
+                <p class="hero-subtitle">Complete guide to building, deploying, and hosting websites using GitHub Pages, Codespaces, and modern web technologies. From zero to deployed website.</p>
+                <div class="hero-buttons">
+                    <a href="github-pages.html" class="btn btn-primary">Start with GitHub Pages</a>
+                    <a href="web-development.html" class="btn btn-secondary">Learn Web Development</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="quick-nav">
+        <div class="container">
+            <h2 class="section-title">Choose Your Learning Path</h2>
+            <div class="path-grid">
+                <div class="path-card" onclick="window.location.href='github-pages.html'">
+                    <div class="path-icon">🚀</div>
+                    <h3>GitHub Pages</h3>
+                    <p>Deploy your website to the internet for free with GitHub Pages. Learn setup, deployment, and best practices.</p>
+                    <div class="path-meta">
+                        <span class="meta-tag">Free</span>
+                        <span class="meta-tag">Static Sites</span>
+                    </div>
+                </div>
+
+                <div class="path-card" onclick="window.location.href='github-codespaces.html'">
+                    <div class="path-icon">💻</div>
+                    <h3>GitHub Codespaces</h3>
+                    <p>Cloud development environment with unblocked browsers and powerful computing resources.</p>
+                    <div class="path-meta">
+                        <span class="meta-tag">Paid</span>
+                        <span class="meta-tag">Cloud IDE</span>
+                    </div>
+                </div>
+
+                <div class="path-card" onclick="window.location.href='web-development.html'">
+                    <div class="path-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Master HTML, CSS, and JavaScript from basics to advanced concepts with practical examples.</p>
+                    <div class="path-meta">
+                        <span class="meta-tag">Beginner</span>
+                        <span class="meta-tag">Languages</span>
+                    </div>
+                </div>
+
+                <div class="path-card" onclick="window.location.href='contact.html'">
+                    <div class="path-icon">📧</div>
+                    <h3>Contact & Support</h3>
+                    <p>Get help, ask questions, or connect with the community through our contact form.</p>
+                    <div class="path-meta">
+                        <span class="meta-tag">Support</span>
+                        <span class="meta-tag">Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why GitHub for Web Development?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🆓</div>
+                    <h3>Completely Free</h3>
+                    <p>Host unlimited static websites on GitHub Pages at no cost. Perfect for portfolios, documentation, and small projects.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Global CDN</h3>
+                    <p>Lightning-fast worldwide content delivery with automatic HTTPS and custom domain support.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Version Control</h3>
+                    <p>Track every change to your website with Git version control. Never lose your work and collaborate easily.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Instant Deployment</h3>
+                    <p>Push to GitHub and your website goes live automatically. Continuous deployment made simple.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Ready</h3>
+                    <p>Develop and deploy your websites directly from your mobile device with GitHub Mobile app.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Enterprise Security</h3>
+                    <p>Enterprise-grade security with automatic SSL certificates and vulnerability scanning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Example -->
+    <section class="live-example">
+        <div class="container">
+            <h2 class="section-title">See GitHub Pages in Action</h2>
+            <div class="example-card">
+                <div class="example-content">
+                    <h3>the-sawfish.github.io/game-portal</h3>
+                    <p>A live example of a GitHub Pages website featuring a modern game portal with responsive design, interactive elements, and professional styling. This demonstrates what's possible with GitHub Pages and modern web technologies.</p>
+                    <div class="example-features">
+                        <span class="feature-tag">Responsive Design</span>
+                        <span class="feature-tag">Interactive Games</span>
+                        <span class="feature-tag">Modern CSS</span>
+                        <span class="feature-tag">Mobile Optimized</span>
+                    </div>
+                    <a href="https://the-sawfish.github.io/game-portal" target="_blank" class="btn btn-primary">View Live Site</a>
+                </div>
+                <div class="example-preview">
+                    <div class="preview-frame">
+                        <div class="preview-browser">
+                            <div class="browser-bar">
+                                <span class="browser-dot red"></span>
+                                <span class="browser-dot yellow"></span>
+                                <span class="browser-dot green"></span>
+                            </div>
+                            <div class="preview-content">
+                                <div class="preview-element"></div>
+                                <div class="preview-element"></div>
+                                <div class="preview-element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Steps -->
+    <section class="getting-started">
+        <div class="container">
+            <h2 class="section-title">Get Started in 3 Steps</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create GitHub Account</h3>
+                        <p>Sign up for a free GitHub account and verify your email address. You'll need this to access GitHub Pages and Codespaces.</p>
+                        <a href="github-pages.html#account-setup" class="step-link">Learn Account Setup →</a>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Learn Web Technologies</h3>
+                        <p>Master HTML, CSS, and JavaScript fundamentals. These are the building blocks of every website on the internet.</p>
+                        <a href="web-development.html" class="step-link">Start Learning →</a>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Deploy Your Site</h3>
+                        <p>Create your first repository, upload your code, and deploy to GitHub Pages. Your website will be live in minutes!</p>
+                        <a href="github-pages.html#deployment" class="step-link">Deploy Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">GitHub Pages vs Codespaces</h2>
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="table-cell"></div>
+                    <div class="table-cell">GitHub Pages</div>
+                    <div class="table-cell">GitHub Codespaces</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Cost</div>
+                    <div class="table-cell">Free</div>
+                    <div class="table-cell">Paid ($0.18/hour)</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Best For</div>
+                    <div class="table-cell">Static websites, documentation, portfolios</div>
+                    <div class="table-cell">Full-stack development, complex projects</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Deployment</div>
+                    <div class="table-cell">Automatic from repository</div>
+                    <div class="table-cell">Manual deployment needed</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Browser Access</div>
+                    <div class="table-cell">Standard</div>
+                    <div class="table-cell">Unblocked browsers</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Computing Power</div>
+                    <div class="table-cell">Server-side only</div>
+                    <div class="table-cell">Cloud VM with full resources</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="github-pages.html">GitHub Pages</a></li>
+                        <li><a href="github-codespaces.html">Codespaces</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages Docs</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank">Codespaces Features</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://the-sawfish.github.io/game-portal" target="_blank">Live Example</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Community</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitHub Web Development Guide. All rights reserved.</p>
+                <p class="design-credit">Homepage design inspired by Eric Zhu's modern web development approach.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
