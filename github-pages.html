@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Complete Guide - Deploy Websites for Free</title>
+    <meta name="description" content="Complete tutorial on setting up GitHub Pages, mobile deployment, repository naming, and best practices for hosting websites on GitHub.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">GitHub Web Dev</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="github-pages.html" class="nav-link active">GitHub Pages</a>
+                <a href="github-codespaces.html" class="nav-link">Codespaces</a>
+                <a href="web-development.html" class="nav-link">Web Development</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header content-page">
+        <div class="container">
+            <h1 class="page-title">GitHub Pages Complete Guide</h1>
+            <p class="page-subtitle">Learn to deploy static websites for free with GitHub Pages. From setup to advanced deployment strategies, master the platform that powers millions of websites worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h3>📋 What You'll Learn</h3>
+                <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-md);">
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#account-setup" style="color: var(--color-primary); text-decoration: none;">Creating and setting up your GitHub account</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#repository-setup" style="color: var(--color-primary); text-decoration: none;">Repository creation and naming conventions</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#deployment" style="color: var(--color-primary); text-decoration: none;">Deploying your website in minutes</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#mobile-setup" style="color: var(--color-primary); text-decoration: none;">Mobile development and deployment</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#custom-domain" style="color: var(--color-primary); text-decoration: none;">Custom domain configuration</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#advanced" style="color: var(--color-primary); text-decoration: none;">Advanced features and best practices</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Setup Section -->
+    <section class="content-section" id="account-setup">
+        <div class="container">
+            <h2 class="section-title">Step 1: Create Your GitHub Account</h2>
+            
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>Visit GitHub.com and Sign Up</h4>
+                    <p>Go to <code>github.com</code> and click the "Sign up" button. You'll need to provide:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>A valid email address</li>
+                        <li>A unique username (this will be part of your website URL)</li>
+                        <li>A strong password</li>
+                    </ul>
+                    <div class="alert alert-info" style="margin-top: var(--spacing-md);">
+                        <strong>Pro Tip:</strong> Choose a username carefully! Your username determines your GitHub Pages URL (username.github.io).
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Verify Your Email Address</h4>
+                    <p>Check your email for a verification message from GitHub. Click the verification link to activate your account. This step is crucial for enabling GitHub Pages access.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Complete Your Profile</h4>
+                    <p>Add a profile picture, bio, and other optional information. While not required, a complete profile helps with collaboration and makes your account look professional.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Enable Two-Factor Authentication (Recommended)</h4>
+                    <p>Go to Settings > Security and enable 2FA for enhanced security. This protects your repositories and enables access to advanced features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repository Setup Section -->
+    <section class="content-section" id="repository-setup">
+        <div class="container">
+            <h2 class="section-title">Step 2: Create Your Repository</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🏠 For User/Organization Sites</h3>
+                    <p>Create a repository named exactly <code>username.github.io</code> where "username" is your GitHub username. This creates a special repository that becomes your main website.</p>
+                    <div class="code-block">
+<code>Repository name: yourusername.github.io
+Visibility: Public (required for free hosting)
+Initialize: Add README file</code>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>📁 For Project Sites</h3>
+                    <p>Create any repository name (e.g., <code>my-awesome-project</code>) and GitHub Pages will serve it from a subdirectory at <code>username.github.io/project-name</code>.</p>
+                    <div class="code-block">
+<code>Repository name: project-name
+Visibility: Public (for free)
+Deploy from: main branch</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-by-step" style="margin-top: var(--spacing-xxl);">
+                <div class="step">
+                    <h4>Create New Repository</h4>
+                    <p>Click the "+" icon in the top right corner and select "New repository". Fill in the repository name following the naming conventions above.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Set Repository Visibility</h4>
+                    <p>For free GitHub Pages hosting, your repository must be public. Private repositories require a paid GitHub plan.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Initialize Repository</h4>
+                    <p>Check "Add a README file" to create an initial commit. You can also add a .gitignore file and choose a license if needed.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Create Repository</h4>
+                    <p>Click "Create repository" to finish setup. You'll be redirected to your new repository page.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Section -->
+    <section class="content-section" id="deployment">
+        <div class="container">
+            <h2 class="section-title">Step 3: Deploy Your Website</h2>
+            
+            <div class="alert alert-success">
+                <strong>🎉 Quick Start:</strong> GitHub Pages supports automatic deployment from your main branch. Your site will be live within minutes!
+            </div>
+
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>Upload Your Website Files</h4>
+                    <p>You have several options to get your code into the repository:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>Web Interface:</strong> Click "uploading an existing file" and drag & drop your HTML, CSS, JS files</li>
+                        <li><strong>GitHub Desktop:</strong> Clone the repository and use Git commands</li>
+                        <li><strong>Command Line:</strong> Use Git commands in terminal</li>
+                        <li><strong>GitHub Mobile:</strong> Use the mobile app for simple uploads</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>Commit Your Changes</h4>
+                    <p>After uploading files, scroll down and add a commit message describing what you've added. Then click "Commit changes".</p>
+                    <div class="code-block">
+<code>Commit message: "Add initial website files"
+
+Description: "Upload homepage, stylesheet, and basic website structure"</code>
+                    </div>
+                </div>
+
+                <div class="step" id="deployment-settings">
+                    <h4>Enable GitHub Pages</h4>
+                    <p>Go to the repository Settings tab, scroll down to "Pages" in the left sidebar, and configure your deployment:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Source: "Deploy from a branch"</li>
+                        <li>Branch: "main" (or "master")</li>
+                        <li>Folder: "/ (root)" for most projects</li>
+                    </ul>
+                    <div class="alert alert-info" style="margin-top: var(--spacing-md);">
+                        <strong>Important:</strong> Wait 5-10 minutes after enabling Pages for your site to become available.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Verify Your Site is Live</h4>
+                    <p>Your site will be available at:</p>
+                    <div class="code-block">
+<code>User/Org sites: https://username.github.io
+Project sites: https://username.github.io/repository-name</code>
+                    </div>
+                    <p>Visit this URL to see your deployed website!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Setup Section -->
+    <section class="content-section" id="mobile-setup">
+        <div class="container">
+            <h2 class="section-title">📱 Mobile Development with GitHub</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>GitHub Mobile App</h3>
+                    <p>Download the GitHub Mobile app for iOS and Android to manage your repositories on the go.</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Upload files directly from your device</li>
+                        <li>Edit Markdown files</li>
+                        <li>Manage pull requests and issues</li>
+                        <li>Review code changes</li>
+                        <li>Access repositories offline</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>Mobile-Friendly Editors</h3>
+                    <p>Several mobile apps allow you to edit code on your phone or tablet:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>GitJournal:</strong> Git client for Android</li>
+                        <li><strong>Working Copy:</strong> Full Git client for iOS</li>
+                        <li><strong>DroidScript:</strong> JavaScript development</li>
+                        <li><strong>JSRun:</strong> Browser-based code editor</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-by-step" style="margin-top: var(--spacing-xxl);">
+                <div class="step">
+                    <h4>Install GitHub Mobile</h4>
+                    <p>Download the GitHub Mobile app from App Store or Google Play. Sign in with your GitHub account credentials.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Navigate to Your Repository</h4>
+                    <p>Find your website repository in the app. You can search for it or find it in your repository list.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Upload or Edit Files</h4>
+                    <p>Use the "+" button to upload new files or edit existing ones. The mobile interface allows basic text editing and file uploads.</p>
+                </div>
+
+                <div class="step">
+                    <h4>Commit and Deploy</h4>
+                    <p>After making changes, commit them with a message. GitHub will automatically redeploy your site using GitHub Pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Domain Section -->
+    <section class="content-section" id="custom-domain">
+        <div class="container">
+            <h2 class="section-title">🌐 Custom Domain Configuration</h2>
+            
+            <div class="content-card">
+                <h3>Adding Your Own Domain</h3>
+                <p>While GitHub Pages provides free hosting, you can also use your own custom domain (e.g., mywebsite.com) instead of the default username.github.io URL.</p>
+            </div>
+
+            <div class="step-by-step" style="margin-top: var(--spacing-xl);">
+                <div class="step">
+                    <h4>Purchase a Domain</h4>
+                    <p>Buy a domain from registrars like Namecheap, GoDaddy, or Google Domains. Popular options include:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Namecheap (.com, .org, .net)</li>
+                        <li>Google Domains (.com, .net, .org)</li>
+                        <li>Cloudflare (.com, .net, .org)</li>
+                        <li>GitHub also offers .github.io domains</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>Configure DNS Records</h4>
+                    <p>In your domain registrar's control panel, add these DNS records:</p>
+                    <div class="code-block">
+<code>Type: A
+Name: @
+Value: 185.199.108.153
+TTL: 3600
+
+Type: A  
+Name: @
+Value: 185.199.109.153
+TTL: 3600
+
+Type: A
+Name: @
+Value: 185.199.110.153
+TTL: 3600
+
+Type: A
+Name: @
+Value: 185.199.111.153
+TTL: 3600</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Add CNAME Record (Optional)</h4>
+                    <p>For www subdomain support, add a CNAME record:</p>
+                    <div class="code-block">
+<code>Type: CNAME
+Name: www
+Value: username.github.io
+TTL: 3600</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Configure GitHub Pages</h4>
+                    <p>In your repository Settings > Pages, add your custom domain in the "Custom domain" field and save. GitHub will verify the domain and issue an SSL certificate automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Section -->
+    <section class="content-section" id="advanced">
+        <div class="container">
+            <h2 class="section-title">🚀 Advanced Features & Best Practices</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Build Automation</h3>
+                    <p>GitHub Actions can automatically build and deploy your site:</p>
+                    <div class="code-block">
+<code># .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3</code>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Static Site Generators</h3>
+                    <p>Popular SSG options that work great with GitHub Pages:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>Jekyll:</strong> Built into GitHub Pages</li>
+                        <li><strong>Next.js:</strong> Export static sites</li>
+                        <li><strong>Nuxt.js:</strong> Vue.js framework</li>
+                        <li><strong>VuePress:</strong> Vue.js documentation</li>
+                        <li><strong>Docusaurus:</strong> React documentation</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>Performance Optimization</h3>
+                    <p>Improve your site's performance on GitHub Pages:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Use HTTPS (automatic)</li>
+                        <li>Optimize images (WebP format)</li>
+                        <li>Minify CSS and JavaScript</li>
+                        <li>Implement lazy loading</li>
+                        <li>Use a CDN for large assets</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>SEO Best Practices</h3>
+                    <p>Optimize your GitHub Pages site for search engines:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Add meta descriptions</li>
+                        <li>Use semantic HTML</li>
+                        <li>Create sitemap.xml</li>
+                        <li>Add robots.txt</li>
+                        <li>Use proper heading structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: var(--spacing-xxl);">
+                <h3>🎯 Live Example: the-sawfish.github.io</h3>
+                <p>Check out <a href="https://the-sawfish.github.io/game-portal" target="_blank" style="color: var(--color-primary);">the-sawfish.github.io/game-portal</a> for a real-world example of a GitHub Pages website featuring modern web development practices, responsive design, and interactive elements.</p>
+                <div class="alert alert-success" style="margin-top: var(--spacing-md);">
+                    <strong>What you'll see:</strong> Professional game portal with responsive design, interactive cards, modern CSS animations, and mobile optimization - all hosted for free on GitHub Pages!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">🎓 What's Next?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Learn Web Development</h3>
+                    <p>Master HTML, CSS, and JavaScript to create amazing websites. Our comprehensive tutorial covers everything from basics to advanced concepts.</p>
+                    <a href="web-development.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Start Learning →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Explore GitHub Codespaces</h3>
+                    <p>Discover cloud development environments with unblocked browsers and powerful computing resources for complex projects.</p>
+                    <a href="github-codespaces.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn Codespaces →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Get Support</h3>
+                    <p>Need help with your GitHub Pages setup? Join our community or get one-on-one support through our contact form.</p>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Contact Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="github-pages.html">GitHub Pages</a></li>
+                        <li><a href="github-codespaces.html">Codespaces</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages Docs</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank">Codespaces Features</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://the-sawfish.github.io/game-portal" target="_blank">Live Example</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Community</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitHub Web Development Guide. All rights reserved.</p>
+                <p class="design-credit">Homepage design inspired by Eric Zhu's modern web development approach.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
