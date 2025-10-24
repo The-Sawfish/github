@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Codespaces Guide - Cloud Development Environment</title>
+    <meta name="description" content="Complete guide to GitHub Codespaces cloud development environment with unblocked browsers, pricing, features, and deployment strategies.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">GitHub Web Dev</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="github-pages.html" class="nav-link">GitHub Pages</a>
+                <a href="github-codespaces.html" class="nav-link active">Codespaces</a>
+                <a href="web-development.html" class="nav-link">Web Development</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header content-page">
+        <div class="container">
+            <h1 class="page-title">GitHub Codespaces Complete Guide</h1>
+            <p class="page-subtitle">Discover cloud development environments with unblocked browsers and powerful computing resources. Build complex applications with enterprise-grade tools in the cloud.</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h3>📋 What You'll Learn</h3>
+                <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-md);">
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#what-is-codespaces" style="color: var(--color-primary); text-decoration: none;">What is GitHub Codespaces?</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#pricing" style="color: var(--color-primary); text-decoration: none;">Pricing and cost breakdown</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#features" style="color: var(--color-primary); text-decoration: none;">Key features and capabilities</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#unblocked-browsers" style="color: var(--color-primary); text-decoration: none;">Unblocked browser access</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#setup" style="color: var(--color-primary); text-decoration: none;">Setting up your first Codespace</a></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><a href="#vs-pages" style="color: var(--color-primary); text-decoration: none;">Codespaces vs GitHub Pages comparison</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Codespaces -->
+    <section class="content-section" id="what-is-codespaces">
+        <div class="container">
+            <h2 class="section-title">What is GitHub Codespaces?</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>☁️ Cloud Development Environment</h3>
+                    <p>GitHub Codespaces is a cloud-based development environment that provides full-featured development environments in the cloud, complete with unblocked browser access, full computing power, and enterprise-grade tools.</p>
+                    <div class="alert alert-info" style="margin-top: var(--spacing-md);">
+                        <strong>Key Benefit:</strong> Access powerful computing resources without setting up local development environments.
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>🖥️ Full Desktop Experience</h3>
+                    <p>Codespaces provides a complete desktop-like development experience with:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>VS Code interface in your browser</li>
+                        <li>Terminal access with full Linux environment</li>
+                        <li>File system with persistent storage</li>
+                        <li>Port forwarding for local development</li>
+                        <li>Git integration built-in</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🚀 Instant Environment</h3>
+                    <p>Start coding immediately with pre-configured environments:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Pre-installed dependencies and tools</li>
+                        <li>Language-specific configurations</li>
+                        <li>Container-based isolation</li>
+                        <li>Automatic environment updates</li>
+                        <li>Reproducible development setup</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🌐 Unblocked Browser Access</h3>
+                    <p>Unlike traditional cloud IDEs, Codespaces provides:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Full internet access without restrictions</li>
+                        <li>Unblocked web browsing capabilities</li>
+                        <li>Access to any websites or services</li>
+                        <li>No corporate firewall limitations</li>
+                        <li>Support for all web technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="content-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title">💰 Pricing Structure</h2>
+            
+            <div class="alert alert-warning" style="margin-bottom: var(--spacing-xl);">
+                <strong>⚠️ Important:</strong> GitHub Codespaces is a paid service. Make sure you understand the pricing before use to avoid unexpected charges.
+            </div>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>💳 Pay-as-You-Go Model</h3>
+                    <p>GitHub Codespaces uses a consumption-based pricing model:</p>
+                    <div class="code-block">
+<code>Core-hours: $0.18 per core hour
+Storage: $0.07 per GB per month
+Bandwidth: $0.10 per GB
+
+Example: 2-core machine for 8 hours
+= 16 core-hours × $0.18 = $2.88</code>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>🎁 Free Tier</h3>
+                    <p>GitHub provides monthly free allowances:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>GitHub Free:</strong> 120 core-hours + 15GB storage</li>
+                        <li><strong>GitHub Pro:</strong> 180 core-hours + 20GB storage</li>
+                        <li><strong>GitHub Team:</strong> 240 core-hours + 25GB storage</li>
+                        <li><strong>GitHub Enterprise:</strong> 500+ core-hours</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>💡 Cost Optimization Tips</h3>
+                    <p>Reduce your Codespaces costs with these strategies:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Stop your codespace when not in use</li>
+                        <li>Use smaller machine types for development</li>
+                        <li>Delete old codespaces to save storage</li>
+                        <li>Set up spending limits and alerts</li>
+                        <li>Use Codespaces efficiently for complex tasks only</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>📊 Machine Types</h3>
+                    <p>Choose the right machine for your needs:</p>
+                    <div class="code-block">
+<code>2-core: Basic web development
+4-core: Full-stack development
+8-core: Machine learning, complex builds
+16-core: Heavy computational tasks
+
+Each core costs $0.18 per hour</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: var(--spacing-xl);">
+                <h3>💳 Setting Up Billing</h3>
+                <p>Configure your billing information in GitHub:</p>
+                <div class="step-by-step" style="margin-top: var(--spacing-lg);">
+                    <div class="step">
+                        <h4>Access Billing Settings</h4>
+                        <p>Go to your GitHub account Settings > Billing and plans > Codespaces</p>
+                    </div>
+                    <div class="step">
+                        <h4>Set Spending Limit</h4>
+                        <p>Set a monthly spending limit to prevent unexpected charges (recommended: $10-50 for personal use)</p>
+                    </div>
+                    <div class="step">
+                        <h4>Add Payment Method</h4>
+                        <p>Add a credit card or payment method for your Codespaces usage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="content-section" id="features">
+        <div class="container">
+            <h2 class="section-title">🚀 Key Features & Capabilities</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🎨 VS Code Integration</h3>
+                    <p>Full VS Code experience in your browser with:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>All VS Code extensions</li>
+                        <li>IntelliSense and autocomplete</li>
+                        <li>Integrated terminal</li>
+                        <li>Git integration</li>
+                        <li>Remote development capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔧 Pre-configured Environments</h3>
+                    <p>Start with ready-to-use environments for:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>Node.js:</strong> JavaScript, TypeScript, React</li>
+                        <li><strong>Python:</strong> Django, Flask, data science</li>
+                        <li><strong>Java:</strong> Spring Boot, Maven</li>
+                        <li><strong>.NET:</strong> ASP.NET Core applications</li>
+                        <li><strong>Go:</strong> Go applications and services</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🌐 Port Forwarding</h3>
+                    <p>Access local services running in your Codespace:</p>
+                    <div class="code-block">
+<code>Auto-forwarded ports:
+- localhost:3000 → your-codespace-xxxxx.devspaces.aws.amazon.com:3000
+- localhost:5000 → your-codespace-xxxxx.devspaces.aws.amazon.com:5000
+
+Public ports can be shared with collaborators</code>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔄 Git Integration</h3>
+                    <p>Built-in version control capabilities:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Automatic repository cloning</li>
+                        <li>Branch management</li>
+                        <li>Pull request creation</li>
+                        <li>Merge conflict resolution</li>
+                        <li>Commit history browsing</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔐 Security & Compliance</h3>
+                    <p>Enterprise-grade security features:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Isolated container environment</li>
+                        <li>Encrypted connections</li>
+                        <li>SOC 2 compliance</li>
+                        <li>GDPR compliance</li>
+                        <li>Enterprise SSO integration</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>📁 Persistent Storage</h3>
+                    <p>Your work persists between sessions:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>File system persistence</li>
+                        <li>VS Code settings and extensions</li>
+                        <li>Terminal history</li>
+                        <li>Workspace configurations</li>
+                        <li>Git credentials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unblocked Browsers Section -->
+    <section class="content-section" id="unblocked-browsers">
+        <div class="container">
+            <h2 class="section-title">🌐 Unblocked Browser Access</h2>
+            
+            <div class="alert alert-success">
+                <strong>🎯 Major Advantage:</strong> Unlike many cloud IDEs, Codespaces provides unrestricted internet access, making it ideal for web development, API testing, and accessing any external services.
+            </div>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🚫 No Content Restrictions</h3>
+                    <p>Access any website or service without filtering:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>All major social media platforms</li>
+                        <li>Streaming services (YouTube, Netflix, etc.)</li>
+                        <li>Gaming websites and platforms</li>
+                        <li>News and media sites</li>
+                        <li>Development tools and services</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔓 Corporate Network Friendly</h3>
+                    <p>Perfect for development in restricted environments:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>No corporate firewall blocks</li>
+                        <li>Access to any API or service</li>
+                        <li>Download any software or tools</li>
+                        <li>Web-based development tools</li>
+                        <li>Third-party integrations</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🛠️ Development Advantages</h3>
+                    <p>Unblocked access enables:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Testing with real external APIs</li>
+                        <li>Accessing development documentation</li>
+                        <li>Using web-based design tools</li>
+                        <li>Testing cross-origin functionality</li>
+                        <li>Accessing any npm packages or dependencies</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>⚠️ Usage Guidelines</h3>
+                    <p>While unblocked, use responsibly:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Follow your organization's policies</li>
+                        <li>Don't violate service terms of use</li>
+                        <li>Be mindful of bandwidth costs</li>
+                        <li>Maintain professional standards</li>
+                        <li>Consider data privacy implications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: var(--spacing-xl);">
+                <h3>🔍 Testing Your Access</h3>
+                <p>Verify your unblocked access with this simple test:</p>
+                <div class="code-block">
+<code>// In your Codespace terminal
+curl -I https://www.youtube.com
+curl -I https://www.google.com
+curl -I https://api.github.com
+
+// Or check external APIs
+curl https://api.openweathermap.org/data/2.5/weather?q=London
+
+// All should return successful HTTP responses</code>
+                </div>
+                <p style="margin-top: var(--spacing-md);">If all requests succeed, you have full unblocked access!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Section -->
+    <section class="content-section" id="setup">
+        <div class="container">
+            <h2 class="section-title">🛠️ Setting Up Your First Codespace</h2>
+            
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>Prerequisites</h4>
+                    <p>Before starting, ensure you have:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Active GitHub account</li>
+                        <li>Access to a repository</li>
+                        <li>Billing information configured</li>
+                        <li>Codespaces enabled (check Settings > Codespaces)</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>Create a Codespace</h4>
+                    <p>Navigate to your repository and click "Code" → "Codespaces" → "Create codespace on main"</p>
+                    <div class="alert alert-info" style="margin-top: var(--spacing-md);">
+                        <strong>Tip:</strong> You can also create a Codespace from any public repository on GitHub
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Choose Machine Type</h4>
+                    <p>Select the appropriate machine for your needs:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>2-core:</strong> Basic web development (recommended)</li>
+                        <li><strong>4-core:</strong> Full-stack development</li>
+                        <li><strong>8-core:</strong> Complex applications, machine learning</li>
+                        <li><strong>16-core:</strong> Heavy computational tasks</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>Wait for Environment Setup</h4>
+                    <p>Your Codespace will be created and configured automatically. This process typically takes 2-3 minutes and includes:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Container image download</li>
+                        <li>Dependencies installation</li>
+                        <li>VS Code server startup</li>
+                        <li>Extension loading</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h4>Start Coding</h4>
+                    <p>Once ready, VS Code will open in your browser. You now have:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Full file system access</li>
+                        <li>Integrated terminal</li>
+                        <li>Git integration</li>
+                        <li>Port forwarding for web servers</li>
+                        <li>All installed tools and dependencies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: var(--spacing-xl);">
+                <h3>🎯 Example: Setting Up a React App</h3>
+                <p>Here's how to set up a React application in Codespaces:</p>
+                <div class="code-block">
+<code>// In your Codespace terminal
+npx create-react-app my-app
+cd my-app
+npm start
+
+// Your app will be accessible at:
+// https://your-codespace-xxxxx.devspaces.aws.amazon.com:3000</code>
+                </div>
+                <p style="margin-top: var(--spacing-sm);">Codespaces automatically forwards port 3000, making your React app accessible immediately!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VS Pages Comparison -->
+    <section class="content-section" id="vs-pages">
+        <div class="container">
+            <h2 class="section-title">⚖️ GitHub Codespaces vs GitHub Pages</h2>
+            
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="table-cell">Feature</div>
+                    <div class="table-cell">GitHub Pages</div>
+                    <div class="table-cell">GitHub Codespaces</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Cost</div>
+                    <div class="table-cell">Free</div>
+                    <div class="table-cell">Paid ($0.18/core-hour)</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Primary Use</div>
+                    <div class="table-cell">Static website hosting</div>
+                    <div class="table-cell">Development environment</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Deployment</div>
+                    <div class="table-cell">Automatic from repository</div>
+                    <div class="table-cell">Manual deployment required</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Browser Access</div>
+                    <div class="table-cell">Standard</div>
+                    <div class="table-cell">Unblocked browsers</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Computing Power</div>
+                    <div class="table-cell">Server-side rendering only</div>
+                    <div class="table-cell">Full VM with multi-core CPU</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Environment</div>
+                    <div class="table-cell">Pre-built static hosting</div>
+                    <div class="table-cell">Customizable development environment</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Best For</div>
+                    <div class="table-cell">Portfolios, docs, blogs, static sites</div>
+                    <div class="table-cell">Full-stack apps, API development, testing</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Scalability</div>
+                    <div class="table-cell">Static content only</div>
+                    <div class="table-cell">Can handle dynamic workloads</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Setup Time</div>
+                    <div class="table-cell">Minutes</div>
+                    <div class="table-cell">2-3 minutes per Codespace</div>
+                </div>
+            </div>
+
+            <div class="content-grid" style="margin-top: var(--spacing-xl);">
+                <div class="content-card">
+                    <h3>🎯 Use GitHub Pages When:</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Building static websites or blogs</li>
+                        <li>Creating documentation sites</li>
+                        <li>Hosting portfolio projects</li>
+                        <li>Need free, reliable hosting</li>
+                        <li>Simple deployment requirements</li>
+                        <li>Don't need complex backend logic</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🚀 Use GitHub Codespaces When:</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Developing full-stack applications</li>
+                        <li>Need unblocked internet access</li>
+                        <li>Require powerful computing resources</li>
+                        <li>Testing complex integrations</li>
+                        <li>Building API backends</li>
+                        <li>Need custom development environment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-card" style="margin-top: var(--spacing-xl);">
+                <h3>💡 Combined Workflow</h3>
+                <p>The best approach is often using both services together:</p>
+                <ol style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Develop:</strong> Use Codespaces for coding and testing</li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Deploy:</strong> Push to GitHub when ready</li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Host:</strong> Let GitHub Pages automatically deploy your static site</li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Repeat:</strong> Use Codespaces for the next development cycle</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Use Cases -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">🎯 Advanced Use Cases</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🔬 Machine Learning Projects</h3>
+                    <p>Codespaces excels for ML development:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>GPU access for training models</li>
+                        <li>Python environments with popular ML libraries</li>
+                        <li>Jupyter notebook integration</li>
+                        <li>Model testing and deployment</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔧 API Development</h3>
+                    <p>Perfect for backend API development:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Multiple language support</li>
+                        <li>Database integrations</li>
+                        <li>Testing with unblocked access</li>
+                        <li>Integration with external services</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🌐 Web Scraping & Automation</h3>
+                    <p>Unblocked access enables:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Access to any website for scraping</li>
+                        <li>Browser automation tools</li>
+                        <li>API testing and validation</li>
+                        <li>Integration testing</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>👥 Team Collaboration</h3>
+                    <p>Codepsaces enhances team development:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Consistent development environments</li>
+                        <li>Easy sharing of development setup</li>
+                        <li>Onboarding new team members</li>
+                        <li>Review and pair programming sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">🎓 What's Next?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Learn Web Development</h3>
+                    <p>Master HTML, CSS, and JavaScript to create amazing websites. Perfect complement to your Codespaces development environment.</p>
+                    <a href="web-development.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Start Learning →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Deploy to GitHub Pages</h3>
+                    <p>Learn to deploy your static websites and applications to GitHub Pages for free hosting.</p>
+                    <a href="github-pages.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn Deployment →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Get Support</h3>
+                    <p>Need help with your Codespaces setup or have questions about development environments?</p>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Contact Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="github-pages.html">GitHub Pages</a></li>
+                        <li><a href="github-codespaces.html">Codespaces</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages Docs</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank">Codespaces Features</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://the-sawfish.github.io/game-portal" target="_blank">Live Example</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Community</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitHub Web Development Guide. All rights reserved.</p>
+                <p class="design-credit">Homepage design inspired by Eric Zhu's modern web development approach.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
