@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Tutorial - Learn HTML, CSS, and JavaScript</title>
+    <meta name="description" content="Complete web development tutorial covering HTML, CSS, and JavaScript from basics to advanced concepts with practical examples and code snippets.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">GitHub Web Dev</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="github-pages.html" class="nav-link">GitHub Pages</a>
+                <a href="github-codespaces.html" class="nav-link">Codespaces</a>
+                <a href="web-development.html" class="nav-link active">Web Development</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header content-page">
+        <div class="container">
+            <h1 class="page-title">Complete Web Development Tutorial</h1>
+            <p class="page-subtitle">Master HTML, CSS, and JavaScript from fundamentals to advanced concepts. Build modern, responsive websites with practical examples and real-world projects.</p>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h3>🛤️ Learning Path</h3>
+                <div class="content-grid" style="margin-top: var(--spacing-lg);">
+                    <div class="content-card">
+                        <h4>1️⃣ HTML Fundamentals</h4>
+                        <p>Structure and semantic markup for web content</p>
+                    </div>
+                    <div class="content-card">
+                        <h4>2️⃣ CSS Styling</h4>
+                        <p>Visual design, layouts, and responsive design</p>
+                    </div>
+                    <div class="content-card">
+                        <h4>3️⃣ JavaScript Programming</h4>
+                        <p>Interactivity, DOM manipulation, and logic</p>
+                    </div>
+                    <div class="content-card">
+                        <h4>4️⃣ Advanced Concepts</h4>
+                        <p>Modern features, APIs, and best practices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML Section -->
+    <section class="content-section" id="html-basics">
+        <div class="container">
+            <h2 class="section-title">📄 HTML Fundamentals</h2>
+            
+            <div class="content-card">
+                <h3>What is HTML?</h3>
+                <p>HTML (HyperText Markup Language) is the foundation of every web page. It provides the structure and meaning to web content using elements and tags.</p>
+                <div class="alert alert-info">
+                    <strong>Think of it as:</strong> The skeleton of a website - it defines the structure, just like how bones define the structure of your body.
+                </div>
+            </div>
+
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>Basic HTML Document Structure</h4>
+                    <p>Every HTML document follows this basic structure:</p>
+                    <div class="code-block">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Essential HTML Tags</h4>
+                    <p>Learn these fundamental HTML elements:</p>
+                    <div class="code-block">
+<code>&lt;!-- Headings: h1 is most important, h6 is least --&gt;
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;h3&gt;Subsection Title&lt;/h3&gt;
+
+&lt;!-- Paragraphs and text formatting --&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;
+&lt;u&gt;Underlined text&lt;/u&gt;
+
+&lt;!-- Links and images --&gt;
+&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;
+&lt;img src="image.jpg" alt="Description"&gt;</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Semantic HTML Elements</h4>
+                    <p>Use semantic elements to give meaning to your content:</p>
+                    <div class="code-block">
+<code>&lt;header&gt;Website header with navigation&lt;/header&gt;
+&lt;nav&gt;Navigation menu&lt;/nav&gt;
+&lt;main&gt;Main content area&lt;/main&gt;
+&lt;section&gt;A thematic grouping of content&lt;/section&gt;
+&lt;article&gt;An independent piece of content&lt;/article&gt;
+&lt;aside&gt;Sidebar content&lt;/aside&gt;
+&lt;footer&gt;Website footer&lt;/footer&gt;
+
+&lt;!-- Lists --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Unordered list item 1&lt;/li&gt;
+    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered list item 1&lt;/li&gt;
+    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+&lt;/ol&gt;</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Forms and Input Elements</h4>
+                    <p>Create interactive forms for user input:</p>
+                    <div class="code-block">
+<code>&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" rows="4"&gt;&lt;/textarea&gt;
+    
+    &lt;select name="country"&gt;
+        &lt;option value="us"&gt;United States&lt;/option&gt;
+        &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+        &lt;option value="ca"&gt;Canada&lt;/option&gt;
+    &lt;/select&gt;
+    
+    &lt;input type="checkbox" id="terms" name="terms"&gt;
+    &lt;label for="terms"&gt;I agree to the terms&lt;/label&gt;
+    
+    &lt;button type="submit"&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Section -->
+    <section class="content-section" id="css-basics">
+        <div class="container">
+            <h2 class="section-title">🎨 CSS Styling Fundamentals</h2>
+            
+            <div class="content-card">
+                <h3>What is CSS?</h3>
+                <p>CSS (Cascading Style Sheets) controls the visual appearance of HTML elements. It defines colors, fonts, layouts, animations, and responsive behavior.</p>
+                <div class="alert alert-success">
+                    <strong>Think of it as:</strong> The clothing and makeup of a website - it makes it look beautiful and professional.
+                </div>
+            </div>
+
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>CSS Selectors and Basic Properties</h4>
+                    <p>Learn to target HTML elements and apply styles:</p>
+                    <div class="code-block">
+<code>/* Element selector */
+h1 {
+    color: #2563eb;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Class selector */
+.btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ID selector */
+#header {
+    background-color: #f8fafc;
+    padding: 20px;
+}
+
+/* Descendant selector */
+nav a {
+    text-decoration: none;
+    color: #374151;
+}
+
+/* Pseudo-class selector */
+.btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>The Box Model</h4>
+                    <p>Understanding how CSS calculates element sizes:</p>
+                    <div class="code-block">
+<code>/* The box model: margin -> border -> padding -> content */
+.box {
+    width: 200px;          /* Content width */
+    height: 100px;         /* Content height */
+    padding: 20px;         /* Space inside border */
+    border: 2px solid #ccc; /* Border around padding */
+    margin: 30px;          /* Space outside border */
+}
+
+/* Alternative: border-box sizing */
+.modern-box {
+    box-sizing: border-box;  /* Width includes padding and border */
+    width: 244px;           /* Total: 200px + 40px padding + 4px border */
+    height: 144px;          /* Total: 100px + 40px padding + 4px border */
+    padding: 20px;
+    border: 2px solid #ccc;
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Flexbox Layout</h4>
+                    <p>Modern layout system for creating flexible layouts:</p>
+                    <div class="code-block">
+<code>/* Container with flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;  /* Horizontal alignment */
+    align-items: center;             /* Vertical alignment */
+    gap: 20px;                       /* Space between items */
+    flex-wrap: wrap;                 /* Wrap to new lines if needed */
+}
+
+/* Flex items */
+.flex-item {
+    flex: 1;                         /* Grow to fill available space */
+    min-width: 250px;               /* Minimum width before wrapping */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>CSS Grid Layout</h4>
+                    <p>Two-dimensional layout system for complex layouts:</p>
+                    <div class="code-block">
+<code>/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid items */
+.grid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Specific grid positioning */
+.hero {
+    grid-column: 1 / -1;  /* Span full width */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>CSS Variables and Modern Features</h4>
+                    <p>Use CSS custom properties for maintainable code:</p>
+                    <div class="code-block">
+<code>/* CSS Variables (Custom Properties) */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #64748b;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Use variables */
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+/* Modern CSS features */
+.gradient {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.backdrop-filter {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Responsive Design</h4>
+                    <p>Make your website work on all devices:</p>
+                    <div class="code-block">
+<code>/* Mobile-first responsive design */
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .container {
+        padding: 3rem;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+}</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section class="content-section" id="javascript-basics">
+        <div class="container">
+            <h2 class="section-title">⚡ JavaScript Programming Fundamentals</h2>
+            
+            <div class="content-card">
+                <h3>What is JavaScript?</h3>
+                <p>JavaScript is the programming language of the web. It adds interactivity, dynamic content, and complex behavior to websites.</p>
+                <div class="alert alert-warning">
+                    <strong>Think of it as:</strong> The nervous system of a website - it responds to user actions and makes things happen.
+                </div>
+            </div>
+
+            <div class="step-by-step">
+                <div class="step">
+                    <h4>Variables and Data Types</h4>
+                    <p>Store and manipulate data in your programs:</p>
+                    <div class="code-block">
+<code>// Variables (ES6+)
+let userName = "John Doe";           // String
+const userAge = 25;                  // Number
+let isLoggedIn = true;               // Boolean
+let userData = null;                 // Null
+let undefinedVar;                    // Undefined
+
+// Arrays
+let skills = ["HTML", "CSS", "JavaScript"];
+let numbers = [1, 2, 3, 4, 5];
+
+// Objects
+let user = {
+    name: "Jane Smith",
+    age: 30,
+    email: "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f555e515a7f5a475e524f535a115c5052">[email&#160;protected]</a>",
+    skills: ["React", "Node.js", "Python"]
+};
+
+// Array methods
+console.log(skills.length);          // 3
+skills.push("Vue.js");               // Add to end
+skills.pop();                        // Remove from end
+skills.map(skill => skill.toUpperCase()); // Transform
+
+// Object methods
+console.log(user.name);              // Property access
+user.skills.push("TypeScript");      // Add new skill</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Functions and Arrow Functions</h4>
+                    <p>Create reusable blocks of code:</p>
+                    <div class="code-block">
+<code>// Traditional function
+function greetUser(name) {
+    return `Hello, ${name}! Welcome to our website.`;
+}
+
+// Arrow function (ES6+)
+const greetUser = (name) => {
+    return `Hello, ${name}! Welcome to our website.`;
+};
+
+// Shorthand arrow function
+const greetUser = name => `Hello, ${name}!`;
+
+// Function with default parameters
+function createUser(name, role = "user") {
+    return {
+        name,
+        role,
+        createdAt: new Date()
+    };
+}
+
+// Higher-order functions
+const numbers = [1, 2, 3, 4, 5];
+
+// Map - transform each element
+const doubled = numbers.map(n => n * 2);
+
+// Filter - keep elements that meet condition
+const evenNumbers = numbers.filter(n => n % 2 === 0);
+
+// Reduce - combine all elements into single value
+const sum = numbers.reduce((total, n) => total + n, 0);</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>DOM Manipulation</h4>
+                    <p>Interact with HTML elements using JavaScript:</p>
+                    <div class="code-block">
+<code>// Select elements
+const button = document.getElementById("submitBtn");
+const title = document.querySelector("h1");
+const items = document.querySelectorAll(".item");
+
+// Modify content
+title.textContent = "New Title";
+title.innerHTML = "&lt;span&gt;Styled Title&lt;/span&gt;";
+
+// Add event listeners
+button.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission
+    console.log("Button clicked!");
+});
+
+// Dynamic content creation
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This paragraph was created with JavaScript";
+newParagraph.className = "dynamic-content";
+document.body.appendChild(newParagraph);
+
+// Style manipulation
+newParagraph.style.color = "blue";
+newParagraph.style.fontSize = "18px";
+newParagraph.style.transition = "all 0.3s ease";
+
+// Class manipulation
+newParagraph.classList.add("highlighted");
+newParagraph.classList.remove("temporary");</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Conditional Statements and Loops</h4>
+                    <p>Control program flow with logic:</p>
+                    <div class="code-block">
+<code>// If statements
+const userAge = 18;
+if (userAge >= 18) {
+    console.log("You are an adult");
+} else if (userAge >= 13) {
+    console.log("You are a teenager");
+} else {
+    console.log("You are a child");
+}
+
+// Switch statements
+const dayOfWeek = "Monday";
+switch (dayOfWeek) {
+    case "Monday":
+        console.log("Start of the work week");
+        break;
+    case "Friday":
+        console.log("End of the work week");
+        break;
+    default:
+        console.log("Mid-week day");
+}
+
+// For loops
+for (let i = 0; i < 5; i++) {
+    console.log(`Iteration ${i}`);
+}
+
+// For...of loop (modern)
+const colors = ["red", "green", "blue"];
+for (const color of colors) {
+    console.log(color);
+}
+
+// While loop
+let count = 0;
+while (count < 3) {
+    console.log(`Count: ${count}`);
+    count++;
+}</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>ES6+ Modern Features</h4>
+                    <p>Modern JavaScript features that make coding easier:</p>
+                    <div class="code-block">
+<code>// Template literals
+const name = "Alice";
+const age = 25;
+const message = `Hello ${name}, you are ${age} years old`;
+
+// Destructuring
+const user = { name: "Bob", email: "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="12707d7052776a737f627e773c717d7f">[email&#160;protected]</a>", role: "admin" };
+const { name, email } = user;
+
+const numbers = [1, 2, 3, 4, 5];
+const [first, second, ...rest] = numbers;
+
+// Spread operator
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2]; // [1, 2, 3, 4, 5, 6]
+
+// Optional chaining
+const user = {
+    profile: {
+        name: "Charlie"
+    }
+};
+
+console.log(user.profile?.name); // "Charlie"
+console.log(user.settings?.theme); // undefined (no error)
+
+// Nullish coalescing
+const config = {
+    theme: null
+};
+
+const theme = config.theme ?? "default"; // "default"</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Async/Await and Promises</h4>
+                    <p>Handle asynchronous operations (like API calls):</p>
+                    <div class="code-block">
+<code>// Promises
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        // Simulate API call
+        setTimeout(() => {
+            const success = Math.random() > 0.5;
+            if (success) {
+                resolve({ data: "API response data" });
+            } else {
+                reject(new Error("API call failed"));
+            }
+        }, 1000);
+    });
+};
+
+// Using promises
+fetchData()
+    .then(result => console.log(result))
+    .catch(error => console.error(error))
+    .finally(() => console.log("Request completed"));
+
+// Async/await (modern approach)
+const getData = async () => {
+    try {
+        console.log("Fetching data...");
+        const result = await fetchData();
+        console.log("Data received:", result);
+    } catch (error) {
+        console.error("Error:", error.message);
+    } finally {
+        console.log("Request finished");
+    }
+};
+
+// Call the async function
+getData();
+
+// Fetch API example
+const fetchUsers = async () => {
+    try {
+        const response = await fetch('https://api.github.com/users');
+        const users = await response.json();
+        return users;
+    } catch (error) {
+        console.error('Failed to fetch users:', error);
+        throw error;
+    }
+};</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Concepts -->
+    <section class="content-section" id="advanced-concepts">
+        <div class="container">
+            <h2 class="section-title">🚀 Advanced Web Development Concepts</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🏗️ Modern JavaScript Frameworks</h3>
+                    <p>Learn popular frameworks for building complex applications:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>React:</strong> Component-based UI library by Facebook</li>
+                        <li><strong>Vue.js:</strong> Progressive framework for building UIs</li>
+                        <li><strong>Angular:</strong> Full-featured framework by Google</li>
+                        <li><strong>Svelte:</strong> Compile-time optimized framework</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔧 Build Tools and Module Bundlers</h3>
+                    <p>Modern development workflow tools:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>Webpack:</strong> Module bundler for modern apps</li>
+                        <li><strong>Vite:</strong> Fast build tool and dev server</li>
+                        <li><strong>Parcel:</strong> Zero-configuration build tool</li>
+                        <li><strong>npm/yarn:</strong> Package managers</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>📱 Progressive Web Apps (PWAs)</h3>
+                    <p>Web apps that work like native apps:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Service Workers for offline functionality</li>
+                        <li>Web App Manifest for installation</li>
+                        <li>Push notifications</li>
+                        <li>App-like experience on mobile</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🌐 Web APIs and Browser Features</h3>
+                    <p>Powerful browser APIs for advanced functionality:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><strong>Geolocation API:</strong> Get user's location</li>
+                        <li><strong>Local Storage:</strong> Store data locally</li>
+                        <li><strong>Canvas API:</strong> 2D graphics and animations</li>
+                        <li><strong>Web Audio API:</strong> Audio processing</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🎯 Performance Optimization</h3>
+                    <p>Make your websites fast and efficient:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Code splitting and lazy loading</li>
+                        <li>Image optimization and formats</li>
+                        <li>Minification and compression</li>
+                        <li>Critical CSS inlining</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>♿ Accessibility (a11y)</h3>
+                    <p>Make your website accessible to everyone:</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Semantic HTML elements</li>
+                        <li>ARIA labels and roles</li>
+                        <li>Keyboard navigation support</li>
+                        <li>Color contrast compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Example -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">💻 Practical Example: Interactive Todo List</h2>
+            
+            <div class="content-card">
+                <h3>Complete Todo List Application</h3>
+                <p>Let's put it all together with a functional todo list that demonstrates HTML, CSS, and JavaScript working together:</p>
+                
+                <div class="code-block">
+<code>&lt;!-- HTML Structure --&gt;
+&lt;div class="todo-app"&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Todo List&lt;/h1&gt;
+        &lt;form id="todoForm"&gt;
+            &lt;input type="text" id="todoInput" placeholder="Add a new task..." required&gt;
+            &lt;button type="submit"&gt;Add Task&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;ul id="todoList"&gt;&lt;/ul&gt;
+        &lt;div class="todo-stats"&gt;
+            &lt;span id="taskCount"&gt;0 tasks remaining&lt;/span&gt;
+            &lt;button id="clearCompleted"&gt;Clear Completed&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS Styles --&gt;
+&lt;style&gt;
+.todo-app {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+#todoForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background: #4ade80;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #22c55e;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+}
+
+.todo-item:hover {
+    background: #f9fafb;
+}
+
+.todo-item.completed {
+    opacity: 0.6;
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+}
+
+.todo-item button {
+    background: #ef4444;
+    margin-left: auto;
+}
+
+.todo-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+&lt;/style&gt;
+
+&lt;!-- JavaScript Logic --&gt;
+&lt;script&gt;
+class TodoApp {
+    constructor() {
+        this.todos = JSON.parse(localStorage.getItem('todos')) || [];
+        this.form = document.getElementById('todoForm');
+        this.input = document.getElementById('todoInput');
+        this.list = document.getElementById('todoList');
+        this.count = document.getElementById('taskCount');
+        this.clearBtn = document.getElementById('clearCompleted');
+        
+        this.init();
+    }
+    
+    init() {
+        this.form.addEventListener('submit', this.addTodo.bind(this));
+        this.clearBtn.addEventListener('click', this.clearCompleted.bind(this));
+        this.render();
+    }
+    
+    addTodo(e) {
+        e.preventDefault();
+        const text = this.input.value.trim();
+        if (!text) return;
+        
+        const todo = {
+            id: Date.now(),
+            text: text,
+            completed: false,
+            createdAt: new Date().toISOString()
+        };
+        
+        this.todos.unshift(todo);
+        this.input.value = '';
+        this.save();
+        this.render();
+    }
+    
+    toggleTodo(id) {
+        const todo = this.todos.find(t => t.id === id);
+        if (todo) {
+            todo.completed = !todo.completed;
+            this.save();
+            this.render();
+        }
+    }
+    
+    deleteTodo(id) {
+        this.todos = this.todos.filter(t => t.id !== id);
+        this.save();
+        this.render();
+    }
+    
+    clearCompleted() {
+        this.todos = this.todos.filter(t => !t.completed);
+        this.save();
+        this.render();
+    }
+    
+    render() {
+        this.list.innerHTML = '';
+        
+        this.todos.forEach(todo => {
+            const li = document.createElement('li');
+            li.className = `todo-item ${todo.completed ? 'completed' : ''}`;
+            
+            li.innerHTML = `
+                &lt;input type="checkbox" ${todo.completed ? 'checked' : ''} 
+                       onchange="app.toggleTodo(${todo.id})"&gt;
+                &lt;span&gt;${this.escapeHtml(todo.text)}&lt;/span&gt;
+                &lt;button onclick="app.deleteTodo(${todo.id})"&gt;Delete&lt;/button&gt;
+            `;
+            
+            this.list.appendChild(li);
+        });
+        
+        this.updateCount();
+    }
+    
+    updateCount() {
+        const remaining = this.todos.filter(t => !t.completed).length;
+        this.count.textContent = `${remaining} task${remaining !== 1 ? 's' : ''} remaining`;
+    }
+    
+    save() {
+        localStorage.setItem('todos', JSON.stringify(this.todos));
+    }
+    
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+}
+
+// Initialize the app
+const app = new TodoApp();
+&lt;/script&gt;</code>
+                </div>
+
+                <div class="alert alert-success" style="margin-top: var(--spacing-lg);">
+                    <strong>🎯 Key Concepts Demonstrated:</strong>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Semantic HTML structure</li>
+                        <li>CSS Grid, Flexbox, and modern styling</li>
+                        <li>ES6+ JavaScript classes and methods</li>
+                        <li>DOM manipulation and event handling</li>
+                        <li>Local Storage for data persistence</li>
+                        <li>Modern JavaScript features (arrow functions, template literals, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">📚 Learning Resources</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🌐 Online Documentation</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://developer.mozilla.org/" target="_blank" style="color: var(--color-primary);">MDN Web Docs</a> - Complete web development reference</li>
+                        <li><a href="https://www.w3schools.com/" target="_blank" style="color: var(--color-primary);">W3Schools</a> - Interactive tutorials and examples</li>
+                        <li><a href="https://javascript.info/" target="_blank" style="color: var(--color-primary);">JavaScript.info</a> - Modern JavaScript tutorial</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🎥 Video Learning</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://www.freecodecamp.org/" target="_blank" style="color: var(--color-primary);">freeCodeCamp</a> - Free comprehensive curriculum</li>
+                        <li><a href="https://www.codecademy.com/" target="_blank" style="color: var(--color-primary);">Codecademy</a> - Interactive coding lessons</li>
+                        <li><a href="https://scrimba.com/" target="_blank" style="color: var(--color-primary);">Scrimba</a> - Interactive screencasts</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>💻 Practice Platforms</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://codepen.io/" target="_blank" style="color: var(--color-primary);">CodePen</a> - Online code editor and community</li>
+                        <li><a href="https://jsfiddle.net/" target="_blank" style="color: var(--color-primary);">JSFiddle</a> - Test JavaScript code snippets</li>
+                        <li><a href="https://codesandbox.io/" target="_blank" style="color: var(--color-primary);">CodeSandbox</a> - Online development environment</li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🚀 Live Example</h3>
+                    <p>See modern web development in action with <a href="https://the-sawfish.github.io/game-portal" target="_blank" style="color: var(--color-primary);">the-sawfish.github.io/game-portal</a> - showcasing responsive design, interactive elements, and professional styling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">🎓 What's Next?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Deploy Your Website</h3>
+                    <p>Learn to deploy your static websites to GitHub Pages for free hosting and global accessibility.</p>
+                    <a href="github-pages.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Deploy to GitHub Pages →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Advanced Development</h3>
+                    <p>Explore GitHub Codespaces for cloud development with unblocked browsers and powerful computing resources.</p>
+                    <a href="github-codespaces.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn Codespaces →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>Get Support</h3>
+                    <p>Need help with your web development journey? Join our community or get personalized assistance.</p>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Contact Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="github-pages.html">GitHub Pages</a></li>
+                        <li><a href="github-codespaces.html">Codespaces</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages Docs</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank">Codespaces Features</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://the-sawfish.github.io/game-portal" target="_blank">Live Example</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Community</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitHub Web Development Guide. All rights reserved.</p>
+                <p class="design-credit">Homepage design inspired by Eric Zhu's modern web development approach.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
