@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get Support for Web Development</title>
+    <meta name="description" content="Get help with GitHub Pages, web development, and coding questions. Contact our community for support, feedback, or collaboration opportunities.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">GitHub Web Dev</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="github-pages.html" class="nav-link">GitHub Pages</a>
+                <a href="github-codespaces.html" class="nav-link">Codespaces</a>
+                <a href="web-development.html" class="nav-link">Web Development</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header content-page">
+        <div class="container">
+            <h1 class="page-title">Contact & Support</h1>
+            <p class="page-subtitle">Get help with your web development journey. Join our community, ask questions, or reach out for personalized support and collaboration opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">📞 Get in Touch</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>📋 Google Form Contact</h3>
+                    <p>Use our comprehensive contact form powered by Google Forms for quick responses and structured support.</p>
+                    <div class="alert alert-info" style="margin: var(--spacing-md) 0;">
+                        <strong>Best for:</strong> General inquiries, support requests, feedback, and collaboration opportunities.
+                    </div>
+                    <a href="https://forms.google.com" target="_blank" class="btn btn-primary">Open Contact Form →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>💬 Community Support</h3>
+                    <p>Join our growing community of developers for peer-to-peer help and knowledge sharing.</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>GitHub Discussions</li>
+                        <li>Stack Overflow</li>
+                        <li>Discord Communities</li>
+                        <li>Reddit Web Dev</li>
+                    </ul>
+                    <a href="https://github.com" target="_blank" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Visit Community →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>📧 Email Support</h3>
+                    <p>For urgent matters or detailed technical questions, send us an email directly.</p>
+                    <div class="alert alert-warning" style="margin: var(--spacing-md) 0;">
+                        <strong>Response time:</strong> 24-48 hours for email inquiries.
+                    </div>
+                    <div class="code-block" style="margin: var(--spacing-md) 0;">
+<code>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="62111712120d101622050b160a17001507000607144c010d0f">[email&#160;protected]</a>
+Subject: [Topic] Brief description
+Include: Error messages, screenshots, code snippets</code>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>🐛 Report Issues</h3>
+                    <p>Found a bug in our tutorials or website? Help us improve by reporting issues.</p>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li>Broken links</li>
+                        <li>Code errors</li>
+                        <li>Typos or grammar</li>
+                        <li>Missing information</li>
+                    </ul>
+                    <a href="https://github.com/issues" target="_blank" class="btn btn-secondary" style="margin-top: var(--spacing-md);">Report Issue →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">✍️ Send us a Message</h2>
+            
+            <div class="contact-form">
+                <div class="alert alert-info">
+                    <strong>📋 Alternative:</strong> You can also use our Google Form contact method above for faster processing.
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience" class="form-label">Experience Level</label>
+                            <select id="experience" name="experience" class="form-select">
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner (0-6 months)</option>
+                                <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                                <option value="advanced">Advanced (2+ years)</option>
+                                <option value="expert">Expert (Professional developer)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic" class="form-label">Topic *</label>
+                        <select id="topic" name="topic" class="form-select" required>
+                            <option value="">Select a topic</option>
+                            <option value="github-pages">GitHub Pages Setup & Deployment</option>
+                            <option value="github-codespaces">GitHub Codespaces Questions</option>
+                            <option value="html-css">HTML/CSS Tutorial Help</option>
+                            <option value="javascript">JavaScript Programming</option>
+                            <option value="website-feedback">Website Content Feedback</option>
+                            <option value="collaboration">Collaboration Opportunity</option>
+                            <option value="bug-report">Bug Report</option>
+                            <option value="feature-request">Feature Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Brief description of your inquiry" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Please provide details about your question, issue, or feedback. Include error messages, code snippets, or screenshots if relevant." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="github-username" class="form-label">GitHub Username (Optional)</label>
+                        <input type="text" id="github-username" name="github-username" class="form-input" placeholder="your-username">
+                        <small style="color: var(--color-text-secondary); font-size: 14px;">Help us understand your GitHub experience level</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" style="margin-right: var(--spacing-sm);">
+                            Subscribe to our newsletter for web development tips and updates
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="terms" name="terms" required style="margin-right: var(--spacing-sm);">
+                            I agree to the <a href="#" style="color: var(--color-primary);">Terms of Service</a> and <a href="#" style="color: var(--color-primary);">Privacy Policy</a> *
+                        </label>
+                    </div>
+
+                    <div style="text-align: center; margin-top: var(--spacing-xl);">
+                        <button type="submit" class="btn btn-primary" style="min-width: 200px;">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>How do I get started with GitHub Pages?</h3>
+                    <p>Start by creating a free GitHub account, then create a repository named <code>username.github.io</code>. Upload your HTML files and enable GitHub Pages in repository settings. Check our <a href="github-pages.html" style="color: var(--color-primary);">detailed guide</a> for step-by-step instructions.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Is GitHub Pages really free?</h3>
+                    <p>Yes! GitHub Pages is completely free for public repositories. You can host unlimited static websites, and your site gets a global CDN with automatic HTTPS. Perfect for portfolios, documentation sites, and blogs.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>What's the difference between GitHub Pages and Codespaces?</h3>
+                    <p>GitHub Pages is for hosting static websites (free), while Codespaces is a cloud development environment (paid) for building and testing complex applications. <a href="github-codespaces.html" style="color: var(--color-primary);">Learn more about Codespaces</a> or see our <a href="index.html#comparison" style="color: var(--color-primary);">comparison table</a>.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Can I use GitHub Pages for dynamic websites?</h3>
+                    <p>GitHub Pages only hosts static files (HTML, CSS, JavaScript). For dynamic features, you can use client-side JavaScript frameworks or integrate with third-party services like Netlify Functions or Cloudflare Workers.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>How long does it take to deploy to GitHub Pages?</h3>
+                    <p>Usually just a few minutes! After pushing code to your repository, GitHub automatically builds and deploys your site. You'll see a green checkmark in your repository when it's live. Sometimes it takes up to 10 minutes for global propagation.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Can I use my own domain with GitHub Pages?</h3>
+                    <p>Absolutely! You can configure a custom domain like <code>mywebsite.com</code> in your repository settings. You'll need to add DNS records with your domain registrar. See our <a href="github-pages.html#custom-domain" style="color: var(--color-primary);">custom domain guide</a> for detailed instructions.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Do I need to know programming to get started?</h3>
+                    <p>Basic knowledge helps, but you can start with simple HTML files. Our <a href="web-development.html" style="color: var(--color-primary);">web development tutorial</a> covers everything from HTML basics to advanced JavaScript. Start simple and gradually build your skills!</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>What should I do if my site isn't loading?</h3>
+                    <p>Check your repository settings to ensure GitHub Pages is enabled, verify your file names are correct (index.html), and make sure your repository is public. Wait a few minutes for deployment to complete, then check your site URL.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Can I collaborate on GitHub Pages sites?</h3>
+                    <p>Yes! GitHub makes collaboration easy. Add collaborators to your repository, and everyone can contribute to your website. Use pull requests to review changes before deploying them live.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>How do I update my website?</h3>
+                    <p>Simply upload or edit files in your repository, and GitHub will automatically redeploy your site. You can do this through the GitHub web interface, GitHub Desktop, or Git command line.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Are there any file size limits?</h3>
+                    <p>GitHub Pages has a 1GB limit per repository and individual files should be under 100MB. For large projects, consider optimizing images and using external CDN services for assets.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Can I build the-sawfish.github.io style sites?</h3>
+                    <p>Definitely! Our example site <a href="https://the-sawfish.github.io/game-portal" target="_blank" style="color: var(--color-primary);">the-sawfish.github.io/game-portal</a> showcases what's possible with GitHub Pages and modern web technologies. Learn the techniques in our tutorials and adapt them to your own projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Resources -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">🤝 Community & Resources</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>🌐 Official GitHub Resources</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://docs.github.com/en/pages" target="_blank" style="color: var(--color-primary);">GitHub Pages Documentation</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank" style="color: var(--color-primary);">GitHub Codespaces Features</a></li>
+                        <li><a href="https://github.community" target="_blank" style="color: var(--color-primary);">GitHub Community Forum</a></li>
+                        <li><a href="https://github.blog" target="_blank" style="color: var(--color-primary);">GitHub Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>📚 Learning Resources</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://developer.mozilla.org/" target="_blank" style="color: var(--color-primary);">MDN Web Docs</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank" style="color: var(--color-primary);">W3Schools</a></li>
+                        <li><a href="https://www.freecodecamp.org/" target="_blank" style="color: var(--color-primary);">freeCodeCamp</a></li>
+                        <li><a href="https://javascript.info/" target="_blank" style="color: var(--color-primary);">JavaScript.info</a></li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>💻 Developer Communities</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://stackoverflow.com/" target="_blank" style="color: var(--color-primary);">Stack Overflow</a></li>
+                        <li><a href="https://www.reddit.com/r/webdev/" target="_blank" style="color: var(--color-primary);">Reddit Web Development</a></li>
+                        <li><a href="https://discord.gg/web" target="_blank" style="color: var(--color-primary);">Web Dev Discord</a></li>
+                        <li><a href="https://dev.to/" target="_blank" style="color: var(--color-primary);">DEV Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>🔧 Tools & References</h3>
+                    <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                        <li><a href="https://validator.w3.org/" target="_blank" style="color: var(--color-primary);">HTML Validator</a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" style="color: var(--color-primary);">CSS Validator</a></li>
+                        <li><a href="https://caniuse.com/" target="_blank" style="color: var(--color-primary);">Can I Use</a></li>
+                        <li><a href="https://fonts.google.com/" target="_blank" style="color: var(--color-primary);">Google Fonts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success/Error Messages -->
+    <div id="formMessage" class="alert" style="display: none; margin: var(--spacing-lg);"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="github-pages.html">GitHub Pages</a></li>
+                        <li><a href="github-codespaces.html">Codespaces</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/pages" target="_blank">GitHub Pages Docs</a></li>
+                        <li><a href="https://github.com/features/codespaces" target="_blank">Codespaces Features</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://the-sawfish.github.io/game-portal" target="_blank">Live Example</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Community</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GitHub Web Development Guide. All rights reserved.</p>
+                <p class="design-credit">Homepage design inspired by Eric Zhu's modern web development approach.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
